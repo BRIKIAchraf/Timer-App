@@ -1,0 +1,18 @@
+<div class="sw-container">
+  <div class="stopwatch">
+    <span>{{ms}} :</span>
+    <span>{{sec}} :</span>
+    <span>{{min}} :</span>
+    <span>{{hr}} : </span>
+  </div>
+   <div class="button-container">
+    <button class="btn-play-pause ripple" (click)="start()">
+      <i *ngIf="!running" class="fas fa-play"></i>
+      <i *ngIf="running" class="fas fa-pause"></i>
+    </button>
+    <button class="ripple" (click)="reset()">
+         <i class="fas fa-redo-alt"></i>
+    </button>
+   </div>
+
+</div>
